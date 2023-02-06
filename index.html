@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HangMan Game</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    </head>
+    <body onload="select_Word()">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <div class="card card-body text-center mt-4" style="height: 500px;">
+                        <h1 class="heading display-5 pb-3">HangMan Game</h1>
+                        <svg style="height: inherit;">
+                            <rect   id="vis1" x="10%" y="95%" width="20%" height="5px" display="none"/>
+                            <rect   id="vis2" x="20%" y="5%" width="5px" height="90%" display="none"/>
+                            <rect   id="vis3" x="20%" y="5%" width="30%" height="5px" display="none"/>
+                            <rect   id="vis4" x="49.8%" y="5%" width="5px" height="13%" display="none"/>
+                            <rect   id="vis6" x="49.8%" y="23%" width=".2%" height="45%" display="none"/>
+                            <circle id="vis5" text-align:center; cx="50%" cy="20%" r="4%" % fill="white" stroke="black" display="none"/>
+                            <line   id="vis7" x1="49.9%" y1="42%" x2="59.8%" y2="28%" stroke="black" display="none"/>
+                            <line   id="vis8" x1="49.9%" y1="42%" x2="39.8%" y2="28%" stroke="black" display="none"/>
+                            <line   id="vis9" x1="49.9%" y1="68%" x2="59.9%" y2="83%" stroke="black" display="none"/>
+                            <line  id="vis10" x1="49.9%" y1="68%" x2="39.9%" y2="83%" stroke="black" display="none"/>
+                        </svg>
+                        <div id="textbox" class="form-group texts" style="margin-top: 1rem;" >
+                        </div>
+                    </div>
+                    <div class="card card-body text-center mt-4" >
+                        <h4 id="corr" text-align="right" style="color:darkgreen; text-align: left;">Correct Input:</h4>
+                        <h4 id="incr" style="color: red; text-align: left;">inCorrect Input:</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="index.js"></script>
+    </body>
+</html>
+
+
+
