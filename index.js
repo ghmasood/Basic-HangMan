@@ -44,7 +44,7 @@ document.onkeydown = function (e) {
     
 }
 
-var gussW=["golnaz","masood","hello","apple","cat","dog","home","word"];
+var gussW=["mofid","masood","hello","apple","cat","dog","home","word","banana","lion","mobile","home","developer","react","frontend","database","vscode","HTML"];
 selectedW="";
 var swl=0;
 function select_Word(){
